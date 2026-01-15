@@ -24,7 +24,10 @@ end
 module Counter = struct
   let create ~clk ~rst ~inc =
     let spec = Reg_spec.create ~clock:clk ~reset:rst () in
-    reg spec ~enable:inc (zero 32)
+    let count = wire 32 in
+    let next = count +:. 1 in
+    count <== reg spec ~enable:inc next;
+    count
 end
 
 module Top = struct
@@ -93,3 +96,8 @@ module Top = struct
     ; xOut = xreg
     }
 end
+
+let () =
+  let module C = Circuit.With_interface (Top.I) (Top.O) in
+  let circuit = C.create ~name:"part1" Top.create in
+  Rtl.output Verilog circuit

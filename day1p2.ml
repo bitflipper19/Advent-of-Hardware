@@ -71,3 +71,8 @@ module Top = struct
 
     { O.c = c }
 end
+
+let () =
+  let module C = Circuit.With_interface (Top.I) (Top.O) in
+  let circuit = C.create ~name:"part1" Top.create in
+  Rtl.output Verilog circuit
