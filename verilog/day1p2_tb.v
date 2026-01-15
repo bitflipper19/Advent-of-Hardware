@@ -50,7 +50,7 @@ module top_tb;
 
 		@(posedge clk);
 
-		$display("x = %0d, count = %0d", dut.x, c);
+		$display("x = %0d, count = %0d", DUT.x, c);
 
 		$finish;
 	end
