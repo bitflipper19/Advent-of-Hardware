@@ -5,7 +5,7 @@ The implementation involves basic arithmetic, addition, modulus etc.
 For the verilog simulation, I used a script to convert the inputs according to my needs, as Idk how to "parse strings" in verilog or in actual hardware. 
 The script used can be found in the `/scripts/ipScript.cpp` and the generated `tb.txt` can be pasted into the `/verilog/day1p1_tb.v` appropriately for custom input testing!! 
 
-After sucessful verilog solution, I moved onto write the Hardcaml version, (Ik it's usually the other way around) :p !! Hardcaml generates (or **"constructs"**) verilog for the required hardware.
+After sucessful verilog solution, I moved on to write the Hardcaml version, (Ik it's usually the other way around) :p !! Hardcaml generates (or **"constructs"**) verilog for the required hardware.
 
 ---
 # About the Solution Flow
@@ -79,7 +79,9 @@ Learned from youtube and the resources provided in the [blog](https://blog.janes
 
 Though Hardcaml (OCaml) is a **Hardware Construction Language** whose purpose is to generate **HDL** code like verilog for the designer, I obviously went the opposite way. Wrote verilog first then tried to write Hardcaml. 
 
-Ngl OCaml made me a bit uncomfortable and forced me to come out of my comfort zone. Waiting eagerly for AoFPGA'26, wish to see myself implementing some core data structures like trees and graphs in future!!
+Ngl OCaml made me a bit uncomfortable and forced me to come out of my comfort zone. ~~OCaml has no curly braces :(~~, Overall the language is accepting, would definitely try out making CPUs/Processors in Hardcaml and attain fluency in it.
+
+Waiting eagerly for AoFPGA'26, wish to see myself implementing some core data structures like trees and graphs in future!!
 
 ---
 # Final Note
