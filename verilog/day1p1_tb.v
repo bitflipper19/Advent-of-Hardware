@@ -42,7 +42,8 @@ module top_tb;
         #10 rst = 1;
         #10 rst = 0;
 
-        // test ip, paste the /scripts/tb.txt here or your custom inputs
+// edit here according to the comments in /scripts/ipScript.cpp
+// replace the block under this with your custom tests
         send(-68);
         send(-30);
         send(48);

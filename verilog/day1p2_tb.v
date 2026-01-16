@@ -37,6 +37,8 @@ module top_tb;
 		@(posedge clk);
 		reset = 0;
 
+// edit here according to the comments in /scripts/ipScript.cpp
+// replace the block under this with your custom tests
 		send(0, 68);
 		send(0, 30);
 		send(1, 48);
